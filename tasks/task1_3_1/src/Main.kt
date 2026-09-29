@@ -1,4 +1,5 @@
 // Task 1.3.1
+package comp2850.hello
 
 import com.github.ajalt.mordant.rendering.AnsiLevel
 import com.github.ajalt.mordant.rendering.TextColors.*
