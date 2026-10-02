@@ -1,10 +1,12 @@
 // Task 1.3.1
 package comp2850.hello
 
+
 import com.github.ajalt.mordant.rendering.AnsiLevel
 import com.github.ajalt.mordant.rendering.TextColors.*
 import com.github.ajalt.mordant.rendering.TextStyles.*
 import com.github.ajalt.mordant.terminal.Terminal
+import java.time.LocalDate
 
 fun main() {
     val term = Terminal(AnsiLevel.TRUECOLOR)
@@ -12,7 +14,7 @@ fun main() {
     val helloStyle = italic + underline + yellow
     term.println(helloStyle("HELLO WORLD!"))
 
-    val date = today()
+    val date = LocalDate.now()
     val dateStyle = bold + green
     term.println(dateStyle("Today is $date"))
 }
